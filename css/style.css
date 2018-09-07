@@ -42,3 +42,46 @@ body{
 .logo{
    height: 35px;
 }
+
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+}
+.heading-text-box{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-align: center; 
+}
+.heading-primary-main{
+     display: block;
+     font-size: 6rem;
+     font-weight: 400;
+     letter-spacing: 35px; 
+     
+     animation-name: moveToLeft;
+     animation-direction: 1s;
+     animation-delay: 3s;
+}
+
+.heading-primary-sub{
+    display: block;
+    letter-spacing: 17.4px;display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+}
+
+@keyframes moveToLeft{
+    0% {
+       opacity: 0;
+       transform: translateX(-100%);
+    }
+    80% {
+       transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
