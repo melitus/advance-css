@@ -34,16 +34,16 @@ body{
     position: relative;
 }
 
-.logo-box{
+.header_logo-box{
    position: absolute;
    top:40px;
    left: 40px;
 }
-.logo{
+.header_logo{
    height: 35px;
 }
 
-.heading-text-box{
+.header_text-box{
     position: absolute;
     top: 40%;
     left: 50%;
@@ -58,7 +58,7 @@ body{
     margin-bottom: 60px;
 }
 
-.heading-primary-main{
+.heading-primary--main{
      display: block;
      font-size: 6rem;
      font-weight: 400;
@@ -69,7 +69,7 @@ body{
      animation-timing-function: ease-out;
 }
 
-.heading-primary-sub{
+.heading-primary--sub{
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -135,7 +135,7 @@ btn:visited{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-white{
+.btn--white{
     background-color: #fff;
     color: #777;
 }
@@ -151,7 +151,7 @@ btn:visited{
     z-index: -1;
     transition: all .4s;
 }
-.btn-white::after{
+.btn--white::after{
     background-color:#fff;
 }
 .btn:hover::after{
@@ -159,7 +159,7 @@ btn:visited{
     opacity: 0;
 }
 
-.btn-animated{
+.btn--animated{
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
 }
