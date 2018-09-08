@@ -1,0 +1,24 @@
+{
+  "name": "advance-css-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melitus/advance-css-sass.git"
+  },
+  "keywords": [
+    "CSS3",
+    "HTML5",
+    "SASS"
+  ],
+  "author": "Sunday Aroh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melitus/advance-css-sass/issues"
+  },
+  "homepage": "https://github.com/melitus/advance-css-sass#readme"
+}
