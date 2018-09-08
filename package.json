@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/melitus/advance-css-sass/issues"
   },
-  "homepage": "https://github.com/melitus/advance-css-sass#readme"
+  "homepage": "https://github.com/melitus/advance-css-sass#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
 }
