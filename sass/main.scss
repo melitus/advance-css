@@ -31,10 +31,25 @@ body{
         url("../img/hero.jpg");
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-    
+    &_logo-box{
+        position: absolute;
+        top:40px;
+        left: 40px;
+     }
+     &_logo{
+        height: 35px;
+     }
+     
+     &_text-box{
+         position: absolute;
+         top: 40%;
+         left: 50%;
+         text-align: center;
+         transform: translate(-50%, -50%); 
+     }
 }
 
 
@@ -44,26 +59,28 @@ body{
 
     backface-visibility: hidden;
     margin-bottom: 60px;
+
+    &--main{
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 35px; 
+        
+        animation-name: moveInLeft;
+        animation-duration: 4s;
+        animation-timing-function: ease-out;
+   }
+   
+   &--sub{
+       display: block;
+       font-size: 2rem;
+       font-weight: 700;
+       letter-spacing: 17.4px;
+       animation: moveInRight 4s ease-out;
+   }
 }
 
-.heading-primary--main{
-     display: block;
-     font-size: 6rem;
-     font-weight: 400;
-     letter-spacing: 35px; 
-     
-     animation-name: moveInLeft;
-     animation-duration: 4s;
-     animation-timing-function: ease-out;
-}
 
-.heading-primary--sub{
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 17.4px;
-    animation: moveInRight 4s ease-out;
-}
 
 @keyframes moveInLeft{
     0% {
@@ -103,9 +120,10 @@ body{
     }
 }
 
+.btn{
 
-.btn:link,
-btn:visited{
+&:link,
+&:visited{
     text-transform: uppercase;
     text-decoration: none; 
     padding: 15px 40px;
@@ -114,20 +132,29 @@ btn:visited{
     transition: all 0.2s;
     position: relative;
 }
-.btn:hover{
+&:hover{
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba($color-black, 0.2);
+
+    &::after{
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
 }
-.btn:active{
+&:active{
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba($color-black, 0.2);
 }
 
-.btn--white{
+&--white{
     background-color: $color-white;
     color: $color-grey-dark;
+
+    &::after{
+        background-color:$color-white;
+    }
 }
-.btn::after{
+&::after{
     content:"";
     display: inline-block;
     height: 100%;
@@ -139,15 +166,9 @@ btn:visited{
     z-index: -1;
     transition: all .4s;
 }
-.btn--white::after{
-    background-color:$color-white;
-}
-.btn:hover::after{
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn--animated{
+&--animated{
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
 }
+}
+
